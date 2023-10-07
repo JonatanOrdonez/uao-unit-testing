@@ -1,9 +1,7 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   describe, expect, test, jest,
 } from '@jest/globals';
 import axios from 'axios';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import MockAdapter from 'axios-mock-adapter';
 import { getPosts, divide } from '../moduleOne.mjs';
 
@@ -21,7 +19,7 @@ describe('divide function', () => {
   });
 
   test('test divide two numbers when b is zero', () => {
-    expect(divide(50, 0)).toThrowError();
+    expect(() => divide(50, 0)).toThrow();
   });
 });
 
