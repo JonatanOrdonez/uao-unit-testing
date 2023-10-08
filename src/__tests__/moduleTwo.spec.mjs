@@ -1,5 +1,5 @@
 import {
-  describe, it, test, expect, jest,
+  describe, it, expect, jest,
 } from '@jest/globals';
 
 import { generateFibonacciSequence } from '../moduleTwo.mjs';
