@@ -8,7 +8,7 @@ import axios from 'axios';
 import { generateFibonacciSequence, getUsers } from '../../moduleTwo.mjs';
 
 describe('generateFibonacciSequence', () => {
-  test('debería generar la secuencia de Fibonacci correctamente', () => {
+  test('Positivo: generar secuencia de fibonacci', () => {
     expect(generateFibonacciSequence(5)).toEqual([0, 1, 1, 2, 3]);
     expect(generateFibonacciSequence(10)).toEqual([0, 1, 1, 2, 3, 5, 8]);
   });
